@@ -6,7 +6,7 @@
 		<title>Vivian</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<meta content="Vivian Portfolio" name="keywords">
-		<meta content="Portfolio Templates" name="description">		
+		<meta content="Portfolio Templates" name="description">
 		<!-- css styles -->
 		<link rel="stylesheet" href="assets/styles.css">
 		<!--bootstrap CSS-->
@@ -53,8 +53,8 @@
 							<h1 class="display-3">Hi, I'm Vivian</h1><h2> A freelance software developer specialized in both front-end and back-end.</h2>
 							<h3><em  class="typed-text-output d-inline"></em></h3>
 							<h3><em class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Web Apps Designer, Web Apps Developer.</em></h3>
-                    <!-- 
-                    <div "><em>Web Designer, ></div> -->
+							<!--
+							<div "><em>Web Designer, ></div> -->
 							<div class="contact-me d-flex">
 								<a href="mailto:amiviann@gmail.com" class="info">Contact Me</a>
 							</div>
@@ -109,9 +109,9 @@
 					</div>
 				</div>
 			</section>
-			<section class="container" id="skills">
+			<section class="container" >
 				<div class="skillBox animate__animated animate__delay-5s ">
-					<p class="title">My Skill</p>
+					<p class="title" id="skills">My Skill</p>
 					<div class="skillBar">
 						<div id="Skill-HTML">
 							<span class="SkillIt">HTML</span>
@@ -150,7 +150,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about custom" id="about">
+			<section class="about custom mt-5" id="about">
 				<div class="container">
 					<div class="sub-content d-grid ">
 						<div class="about-col animate__animated animate__infinite animate__slower animate__swing animate__delay-5s">
@@ -166,38 +166,46 @@
 					</div>
 				</div>
 			</section>
-			<section class="skills custom" id="Services">
-				<div class="container">
-					<div class=>
-						<h2 class="title">My Services</h2>
-						<p class="title-word">
-						</p>
+			<section class="skills custom">
+				<div class="container" id="Services">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="title" >My Services</h2>
+						</div>
 					</div>
-					
-					<div class="skills-content d-grid">
-						<div class="contents skill">
+					<div class="skills-content row">
+						<div class="contents skill col-lg-4 col-md-6  mb-5">
+							<div class="skills-icon"><i class="fa fa-2x fa-laptop-code"></i></div>
+							<div class="skills-text">
+								<h4 class="skillheader">Responsives Design</h4>
+								<p class="skillmain">Every website should be built with these goals in mind: Firstly, it needs to be responsive across all devices. Secondly, it needs to be fast as possible.</p>
+							</div>
+						</div>
+
+						<div class="contents skill col-lg-3 col-md-6  mb-5">
 							<div class="skills-icon"><i class="fa fa-laptop"></i></div>
 							<div class="skills-text">
 								<h4 class="skillheader">Web Design</h4>
-								<p class="skillmain">A website design is the center of attraction for any user,and that's exactly what I do. User focused design is my primary goal of any website.</p>
+								<p class="skillmain">A website design is the center of attraction for any user and that's exactly what I do. User focused design is my primary goal of any website.</p>
 							</div>
 						</div>
-						<div class="contents skill">
-							<div class="skills-icon"><i class="fa fa-laptop"></i></div>
-							<div class="skills-text">
-								<h4 class="skillheader">Web Development</h4>
-								<p class="skillmain">Every website should be built with these goals in mind: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-							</div>
-						</div>
-						<div class="contents skill">
-							<div class="skills-icon"><i class="fa fa-camera"></i></div>
+						
+						<div class="contents skill col-lg-4 col-md-6  mb-5">
+							<div class="skills-icon"><i class="fas fa-database"></i></div>
 							<div class="skills-text">
 								<h4 class="skillheader">Database Management</h4>
 								<p class="skillmain">For every interactive website, the users data are to be kept confidential and held with uttermost importance. Thats exactly what i am good at. </p>
 							</div>
 						</div>
+						<div class="contents skill col-lg-4 col-md-6  mb-5 ">
+							<div class="skills-icon"><i class="fas fa-code"></i></div>
+							<div class="skills-text">
+								<h4 class="skillheader">Web Developmet</h4>
+								<p class="skillmain">Web development is the process of building websites and applications for the internet, or for a private network known as an intrane. This is what i do as well </p>
+							</div>
+						</div>
+					 </div>	
 					</div>
-				</div>
 			</section>
 			<section class="contact section-padding" id="contact">
 				<div class="container mb-3">
@@ -209,75 +217,78 @@
 					</div>
 				</div>
 				<div class="container my-5">
-					 <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" method="post" action="#">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6 my-2">
-                                    <input type="text" class="form-control py-4" id="user" placeholder="Your Name"
-                                        required="required"/>
-                                </div>
-                                <div class="control-group col-sm-6 my-2" >
-                                    <input type="email" class="form-control py-4" id="email" placeholder="Your Email"
-                                        required="required" />
-                                </div>
-                            </div>
-                            <div class="control-group my-2">
-                                <input type="text" class="form-control py-4" id="subject" placeholder="Subject"
-                                    required="required" />
-                            </div>
-                            <div class="control-group my-2">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                   ></textarea>
-                            </div>
-                            <div class="control-group mb-2">
-									<lable>
-									<input name='' type='checkbox' id="terms" class="form-control-checkbox"> Send Message</lable>
-								</div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="button" id="btn" disabled="true">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
-</section>
-		</main>
-		<section>
-			<footer class="mt-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<h3 class="copyheader">Contact Info</h3>
-							<div class="my-2">
-								<a href="#"><i class="fa fa-home social"><span class="copy">18, Flower Estate,Lagos.</span> </i></a>
-								<a><i class="fa fa-phone social"><span class="copy">+2348138821246.</span></i></a>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="contact-form text-center">
+								<div id="success"></div>
+								<form name="sentMessage" id="contactForm" method="post" action="#">
+									<div class="form-row">
+										<div class="control-group col-sm-6 my-2">
+											<input type="text" class="form-control py-4" id="user" placeholder="Your Name"
+											required>
+										</div>
+										<div class="control-group col-sm-6 my-2" >
+											<input type="email" class="form-control py-4" id="email" placeholder="Your Email"
+											required>
+										</div>
+									</div>
+									<div class="control-group my-2">
+										<input type="text" class="form-control py-4" id="subject" placeholder="Subject"
+										required>
+									</div>
+									<div class="control-group my-2">
+										<textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+										required></textarea>
+									</div>
+									<div class="control-group mb-2 ml-auto">
+										<lable>
+										<input name='' type='checkbox' id="terms" class="form-control-checkbox"> Send Message</lable>
+									</div>
+									<div>
+										<button class="btn btn-outline-primary" type="button" id="btn" disabled="true">Submit</button>
+									</div>
+								</form>
 							</div>
-							<div class="my-3">
-								<a href="mailto:amiviann@gmail.com"><i class="fab fa-google social"></i></a>
-								<a href="facebook.com/vivian.akpoke"><i class="fab fa-facebook social"></i></a>
-								<a href="www.linkedin.com/in/vivian-akpoke-25826415b"><i class="fab fa-linkedin social"></i></a>
-								<a href="github.com/Amivian"><i class="fab fa-github social" ></i></a>
-								<a><i class="fab fa-twitter social"></i></a>
-							</div>
-							
-							<div><span class="copy mt-5">All Rights Reserved by Vivian&copy;</p></div>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</div>
 		</section>
-		
-		<div class="scrollTop" onclick="scrollToTop()"></div>
-
-
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
-		<script src="bootstrap/js/jquery-3.6.0.js"></script>
-		<script src="assets/main.js"></script>
-	</body>
+	</main>
+	<section>
+		<footer class="mt-2">
+			<div class="container py-1 px-sm-1 px-md-5">
+					<div>
+								<p class="text-white" id="home"></p>
+								<p class="text-white" id="number"></p>
+						</div>
+						<div class="d-flex justify-content-center my-4">
+							<a  onclick="document.getElementById('home').innerHTML = '18, Flower Estate, Lagos'"><i class="fa fa-home social " id="house"></i></a>
+							<a onclick="document.getElementById('number').innerHTML = '08138821246'"><i class="fa fa-phone social" id="phone"></i></a>
+							<a href="mailto:amiviann@gmail.com"><i class="fab fa-google social"></i></a>
+							<a href="facebook.com/vivian.akpoke"><i class="fab fa-facebook social"></i></a>
+							<a href="www.linkedin.com/in/vivian-akpoke-25826415b"><i class="fab fa-linkedin social"></i></a>
+							<a href="github.com/Amivian"><i class="fab fa-github social" ></i></a>
+							<a><i class="fab fa-twitter social"></i></a>
+						</div>
+						
+						<div class="d-flex justify-content-center mb-3">
+							<a class="text-white copy" href="#">Privacy</a>
+							<span class="px-3 text-white copy">|</span>
+							<a class="text-white copy" href="#">Terms</a>
+							<span class="px-3 text-white copy">|</span>
+							<a class="text-white copy" href="#">FAQs</a>
+							<span class="px-3 text-white copy">|</span>
+							<a class="text-white copy" href="#">Help</a>
+						</div>
+						<div><span class="copy mt-5">All Rights Reserved by Vivian&copy;</p></div>
+				</div>
+		</footer>
+	</section>
+	
+	<div class="scrollTop" onclick="scrollToTop()"></div>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+	<script src="bootstrap/js/jquery-3.6.0.js"></script>
+	<script src="assets/main.js"></script>
+</body>
 </html>

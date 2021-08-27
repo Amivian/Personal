@@ -84,3 +84,22 @@ $(document).ready(function(){
         autoInsertCss: true,
         });
     }
+
+
+// change color of link when clicked
+$("a").click(function(){
+$("a").css("color","");
+$(this).css("color", "#17a2b8");
+});
+
+// toggle the font-awesome home icon
+$('#house').click(function(){
+	$('#home').slideToggle()
+	});
+
+// toggle the font-awesome phone icon
+$('#phone').click(function(){
+	$('#number').slideToggle()
+	});
+
+
