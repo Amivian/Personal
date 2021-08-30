@@ -19,19 +19,21 @@
 		<link rel="icon"  href="favicon.ico">
 	</head>
 	<body>
+
+		<!-- navigation-bar starts -->
 		<section>
 			<header id="header">
 				<div class="container">
 					<nav class="nav d-flex">
 						<a href="#" class="logo animate__animated animate__slow animate__bounceInDown">Viv<span class="add">ian</span></a>
-						<div class="burger">
+						<div class="burger ">
 							<span class="hand-bug"></span>
 							<span class="hand-bug"></span>
 							<span class="hand-bug"></span>
 							<span class="hand-bug bug"></span>
 						</div>
-						<div class="navigation-bar">
-							<ul>
+						<div class="navigation-bar ">
+							<ul class="">
 								<li class="nav-links"><a class="active links" href="#">Home</a></li>
 								<li class="nav-links"><a class="links" href="#projects">Projects</a></li>
 								<li class="nav-links"><a class="links" href="#about">About</a></li>
@@ -45,7 +47,11 @@
 				</div>
 			</header>
 		</section>
+		<!-- navigation-bar ends -->
+
 		<main>
+
+			<!-- what i do starts -->
 			<section class="body" id="body">
 				<div class="container">
 					<div class="body-wrap d-grid">
@@ -53,8 +59,6 @@
 							<h1 class="display-3">Hi, I'm Vivian</h1><h2> A freelance software developer specialized in both front-end and back-end.</h2>
 							<h3><em  class="typed-text-output d-inline"></em></h3>
 							<h3><em class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Web Apps Designer, Web Apps Developer.</em></h3>
-							<!--
-							<div "><em>Web Designer, ></div> -->
 							<div class="contact-me d-flex">
 								<a href="mailto:amiviann@gmail.com" class="info">Contact Me</a>
 							</div>
@@ -66,6 +70,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- what i do ends -->
+
+			<!-- portfolo starts -->
 			<section class="portfolio custom" id="projects">
 				<div class="container">
 					<div >
@@ -109,6 +116,10 @@
 					</div>
 				</div>
 			</section>
+			<!-- portfolio ends -->
+
+
+			<!-- Skills starts -->
 			<section class="container" >
 				<div class="skillBox animate__animated animate__delay-5s ">
 					<p class="title" id="skills">My Skill</p>
@@ -150,6 +161,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- skills ends -->
+
+			<!-- About Starts -->
 			<section class="about custom mt-5" id="about">
 				<div class="container">
 					<div class="sub-content d-grid ">
@@ -166,6 +180,10 @@
 					</div>
 				</div>
 			</section>
+					<!-- About ends -->
+
+
+					<!-- Services starts -->
 			<section class="skills custom">
 				<div class="container" id="Services">
 					<div class="row">
@@ -207,7 +225,51 @@
 					 </div>	
 					</div>
 			</section>
-			<section class="contact section-padding" id="contact">
+					<!-- Service Ends -->
+
+
+
+    <!-- Testimonial Start -->
+ <section class="testimonials py-5 text-white px-1 px-md-5 margin-top-xl mb-5">
+  <img src="" class="icon-overlay" />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="pt-2 text-center font-weight-bold">Our Customers Are Seeing Big Results</h2>
+
+        <div class="carousel-controls testimonial-carousel-controls">
+          <div class="control d-flex align-items-center justify-content-center prev mt-3"><i class="fa fa-chevron-left"></i></div>
+          <div class="control d-flex align-items-center justify-content-center next mt-3"><i class="fa fa-chevron-right"></i></div>
+
+          <div class="testimonial-carousel">
+            <div class="h5 font-weight-normal one-slide mx-auto">
+              <div class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                <div class="message text-center blockquote w-100">"They’ve been consistent throughout the years and grown together with us. Even as they’ve grown, they haven’t lost sight of what they do. Most of their key resources are still with them, which is also a testament to their organization."</div>
+                <div class="blockquote-footer w-100 text-white">Henry Ford, TruckSpot</div>
+              </div>
+            </div>
+            <div class="h5 font-weight-normal one-slide mx-auto">
+              <div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                <div class="message text-center blockquote w-100">"Our website uses Solodev to craft a website capable of representing its diverse residents. The website features a newsroom with the latest events, an interactive calendar, and a mobile app that puts the resources at a user’s fingertips."</div>
+                <div class="blockquote-footer w-100 text-white">Vivian, Amivian</div>
+              </div>
+            </div>
+            <div class="h5 font-weight-normal one-slide mx-auto">
+              <div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                <div class="message text-center blockquote w-100">Solodev is a great company to partner with! We are extremely happy with the software, service, and support.</div>
+                <div class="blockquote-footer w-100 text-white">Jim Joe, WebCorpCo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Testimonial End -->
+
+					<!-- Contact Starts -->
+			<section class="contact section-padding" id="contact mt-5">
 				<div class="container mb-3">
 					<div class="row">
 						<div class="col-md-12">
@@ -254,7 +316,10 @@
 				</div>
 			</div>
 		</section>
+				<!-- contact ends -->
 	</main>
+
+	<!-- Footer Starts -->
 	<section>
 		<footer class="mt-2">
 			<div class="container py-1 px-sm-1 px-md-5">
@@ -263,7 +328,7 @@
 								<p class="text-white" id="number"></p>
 						</div>
 						<div class="d-flex justify-content-center my-4">
-							<a  onclick="document.getElementById('home').innerHTML = '18, Flower Estate, Lagos'"><i class="fa fa-home social " id="house"></i></a>
+							<a  onclick="document.getElementById('home').innerHTML = '18, Flower Estate, Lagos'"><i class="fas fa-map-marker-alt social " id="house"></i></a>
 							<a onclick="document.getElementById('number').innerHTML = '08138821246'"><i class="fa fa-phone social" id="phone"></i></a>
 							<a href="mailto:amiviann@gmail.com"><i class="fab fa-google social"></i></a>
 							<a href="facebook.com/vivian.akpoke"><i class="fab fa-facebook social"></i></a>
@@ -284,9 +349,13 @@
 						<div><span class="copy mt-5">All Rights Reserved by Vivian&copy;</p></div>
 				</div>
 		</footer>
+			<!-- footer ends -->
 	</section>
 	
+	<!-- scroll to top -->
 	<div class="scrollTop" onclick="scrollToTop()"></div>
+
+	<!-- javascript files -->
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
 	<script src="bootstrap/js/jquery-3.6.0.js"></script>
 	<script src="assets/main.js"></script>
