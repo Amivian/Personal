@@ -108,33 +108,21 @@ $('#phone').click(function(){
         });
 
 
-// $(document).ready(function() {
-//   $(".testimonial-carousel").slick({
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: false,
-//     arrows: true,
-//     prevArrow: $(".testimonial-carousel-controls .prev"),
-//     nextArrow: $(".testimonial-carousel-controls .next")
-//   });
-// });
-
-
-function initSlider(){
-    $('.testimonial-carousel').slick({
-    	infinite: true,
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        autoplay: true,
-     prevArrow: $(".testimonial-carousel-controls .prev"),
-     nextArrow: $(".testimonial-carousel-controls .next")
-    });
-}
-
-$(document).on('ready', function () {
-    initSlider();
-});
+$('#testimonial-carousel').owlCarousel({
+	autoplay:true,
+	dots:false,
+	nav:true,
+    loop:true,
+    navTest:['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
